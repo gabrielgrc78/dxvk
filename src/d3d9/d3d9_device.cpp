@@ -3631,6 +3631,10 @@ namespace dxvk {
 
     enabled.extMemoryPriority.memoryPriority = supported.extMemoryPriority.memoryPriority;
 
+    // No null descriptors since we need the "bound" spec constants for shadow samplers
+    enabled.extRobustness2.robustBufferAccess2 = supported.extRobustness2.robustBufferAccess2;
+    enabled.extRobustness2.robustImageAccess2 = supported.extRobustness2.robustImageAccess2;
+
     enabled.extShaderDemoteToHelperInvocation.shaderDemoteToHelperInvocation = supported.extShaderDemoteToHelperInvocation.shaderDemoteToHelperInvocation;
 
     enabled.extVertexAttributeDivisor.vertexAttributeInstanceRateDivisor = supported.extVertexAttributeDivisor.vertexAttributeInstanceRateDivisor;
